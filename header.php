@@ -4,7 +4,8 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <div class="logo me-auto">
-        <a href="index"><img src="assets/img/<?php echo $hqry['site_logo'] ?>" alt=""></a>
+        <!-- <a href="index"><img src="assets/img/<?php echo $hqry['site_logo'] ?>" alt=""></a> -->
+        <a href="index"><img src="assets/img/chandigarh-logo.png" alt=""></a>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>

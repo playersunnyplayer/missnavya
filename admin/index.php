@@ -75,7 +75,7 @@ if(isset($_GET['msg'])&&$_GET['msg']!=''){
                     <div class="text-center mb-4 text-muted">
 
                         <span  style="text=align:center;height:100px;width:100px;">
-                            <img src="assets/images/miss-navya.png" alt="" class="" style="width:100px">
+                            <img src="../assets/images/chandigarh-logo.png" alt="" class="" style="width:100px">
                         </span>
 
                     </div>

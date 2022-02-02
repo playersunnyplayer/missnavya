@@ -6,7 +6,13 @@ include("admin/configuration/functions.php");
 if (isset($_GET['city'])&&$_GET['city']!='') {
 $city=$_GET['city'];
 $qry=mysqli_query($con,"select * from websitepage where url='$city'");
-$hqry2=mysqli_fetch_array($qry);
+$num=mysqli_num_rows($qry);
+  if($num>0){
+    $hqry2=mysqli_fetch_array($qry);
+  }else{
+    header('Location:index');
+  }
+//$hqry2=mysqli_fetch_array($qry);
 }
 $qry=mysqli_query($con,"select * from websiteheader where id='17'");
 $hqry=mysqli_fetch_array($qry);
@@ -85,6 +91,9 @@ $hqry=mysqli_fetch_array($qry);
           </div>
 
         </div>
+        <?php 
+        if($hqry2['related_cities']!=''){
+        ?>
 
         <div class="row">
           <div class="section-title mt-4">
@@ -92,7 +101,7 @@ $hqry=mysqli_fetch_array($qry);
           </div>
 
           <ul class="citiesList r-p-10">
-            <?php $qry=mysqli_query($con,"select * from websitepage order by id desc");
+            <?php $qry=mysqli_query($con,"select * from websitepage where id in(".$hqry2['related_cities'].") order by id desc");
               while($fetch=mysqli_fetch_array($qry)){?>
                 <li><a href="<?php echo $fetch['url']?>"><?php echo $fetch['city'] ?></a></li>
           <?php }?>
@@ -101,6 +110,7 @@ $hqry=mysqli_fetch_array($qry);
 
           <a href="cities" class="viewBtn">View all cities</a>
         </div>
+        <?php } ?>
 
       </div>
     </section><!-- End About Section -->

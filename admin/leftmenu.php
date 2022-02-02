@@ -1,7 +1,7 @@
 <div class="vertical-menu">
 <div data-simplebar class="h-100">
-<div style="text-align:center;width:100px;height:100px;margin:20px auto 10px;overflow:hidden">
-<img src="assets/images/miss-navya.png" alt="" style="width:100px">
+<div style="text-align:center;width:100px;height:40px;margin:20px auto 10px;overflow:hidden">
+<img src="../assets/img/chandigarh-logo.png" alt="" style="width:100px">
 </div>
 <!--- Sidemenu -->
 <div id="sidebar-menu">

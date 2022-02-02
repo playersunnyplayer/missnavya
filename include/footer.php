@@ -1,11 +1,23 @@
 <footer id="footer">
   <div class="container">
     <h3>Contact By Cities</h3>
-    <ul>
+    <!-- <ul>
       <?php $qry=mysqli_query($con,"select * from websitepage order by id desc limit 10");
         while($fetch=mysqli_fetch_array($qry)){?>
           <li><a href="<?php echo $fetch['url']?>"><?php echo $fetch['city'] ?></a></li>
     <?php }?>
+    </ul> -->
+    <ul>
+      <li><a href="/call-girl-zirakpur">Zirakpur </a></li>
+      <li><a href="/call-girl-jaipur">Jaipur</a></li>
+      <li><a href="/call-girl-noida">Noida</a></li>
+      <li><a href="/call-girl-gurgaon">Gurgaon</a></li>
+      <li><a href="/call-girl-delhi">Delhi</a></li>
+      <li><a href="/call-girl-ludhiana ">Ludhiana </a></li>
+      <li><a href="/call-girl-bangalore ">Bangalore </a></li>
+      <li><a href="/call-girl-kolkata ">Kolkata </a></li>
+      <li><a href="/call-girl-goa">Goa</a></li>
+      <li><a href="/call-girl-hyderabad">Hyderabad</a></li>
     </ul>
     <ul class="bootomFooter">
       <li><a href="index">Home</a></li>
